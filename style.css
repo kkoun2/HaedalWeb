@@ -1,0 +1,209 @@
+body {
+    background-color: #FEFEFE;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.logo {
+    color : #FF3B3B;
+    font-family: "Ultra", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+} 
+
+.label, h4 {
+    color : #B34D4D;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* 양옆 여백을 균등하게 배분 */
+  align-items: flex-start;        /* 위쪽 기준으로 정렬 */
+  min-height: 100vh;   /* 화면 전체 높이를 기준으로 잡음 */
+  padding: 40px;
+  gap: 30px;                      /* 각 영역 사이의 간격 */
+  box-sizing: border-box;
+}
+
+.left-section {
+  flex: 1; /* 비율 또는 너비 지정*/
+}
+
+.middle-section {
+  flex: 1;
+}
+
+.right-section {
+  flex: 1;
+}
+
+.card {
+  border-bottom: 2px solid #e0b0b0; /* 아래쪽에 연한 붉은빛 선 생성 */
+  padding-bottom: 15px;             /* 글자와 선 사이의 간격 */
+  margin-bottom: 20px;              /* 다음 박스와의 간격 */
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+/* 각 정보 항목의 아래쪽 여백을 15px씩 띄우기 */
+.info-item {
+  margin-bottom: 15px; 
+}
+
+h3, .label {
+    font-weight: 700;
+}
+
+.label {
+  display: inline-block; /* 너비를 가질 수 있는 성질로 변경 */
+  width: 90px;           /* 라벨 영역의 고정 너비 */
+}
+
+.dark {
+  background-color: #222;
+  color:white;
+}
+
+.goal-section {
+  margin-top:40px;
+  padding:24px;
+  border-radius:16px;
+  background-color: #f5f5f5;
+}
+
+.goal-description {
+  color: #555;
+}
+
+.goal-input-box {
+  display:flex;
+  gap:8px;
+  margin-top:16px;
+}
+
+#goalInput {
+  flex:1;
+  padding:10px;
+  border:1pxsolid #ddd;
+  border-radius:8px;
+}
+
+#addGoalBtn {
+  padding:10px16px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#errorMessage {
+  color:crimson;
+  min-height:20px;
+}
+
+#goalCount {
+  font-size:14px;
+  color: #555;
+}
+
+#goalList {
+  margin-top:16px;
+  padding-left:0;
+  list-style:none;
+}
+
+.goal-item {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:8px;
+  padding:12px;
+  border-radius:10px;
+  background-color:white;
+}
+
+.goal-text {
+  cursor:pointer;
+}
+
+.goal-text.done {
+  color:gray;
+  text-decoration:line-through;
+}
+
+.delete-btn {
+  border:none;
+  background-color:transparent;
+  cursor:pointer;
+}
+
+.guestbook-section {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.guestbook-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#server-msg, #my-msg {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.write-area {
+  display: flex;
+  gap: 10px;
+}
+
+#guest-name {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#guest-msg {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#guest-name:focus, #guest-msg:focus {
+  border-color: #007bff;
+}
+
+#submit-btn {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#submit-btn:hover {
+  background-color: #0056b3;
+}

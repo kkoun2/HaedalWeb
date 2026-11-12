@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>자기소개 페이지</title>
+		<link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Ultra&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class ="container">
+
+        <div class="left-section">
+            <h1 class="logo">
+                PROFILE
+            </h1>
+
+            <p class="sub-info">
+                경북대학교 컴퓨터학부 글로벌SW융합전공 <br>
+                2025005046 강예은 
+            </p>
+
+        </div>
+
+        <div class="middle-section">
+            <img src="profile.jpg" alt="프로필 사진" >
+
+            <h3>ABOUT ME</h3>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">NAME</span>
+                    <span class="value">강예은 / KANG YE EUN </span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">BIRTH</span>
+                    <span class="value">2005. 06. 09 </span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">EMAIL</span>
+                    <span class="value">amkg5358@knu.ac.kr </span>
+                </div>
+
+                <div class="info-item">
+                    <span class="label">PHONE</span>
+                    <span class="value">010.5358.8682</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="card">
+                <h4> INTERESTS </h4>
+                <p> 음악 디깅 <br> 산책 </p>
+            </div>
+
+            <div class="card">
+                <h4> PROS AND CONS <br/> </h4>
+                <p> 장점 - 책임감이 강함, 맡은 일에 최선을 다함 <br>
+                    단점 - 미루는 습관, 잠이 많음 </p>
+            </div>
+
+            <div class="card">
+                <h4> MBTI </h4>
+                <p> ISFP </p>
+            </div>
+
+            <div class="card">
+                <h4> THIS YEAR'S GOALS <br/> </h4>
+                <p> 학점 3.7 이상 <br>
+                    해커톤 나가기 </p>
+            </div>
+        </div>
+
+    </div>
+    
+    <section class="goal-section">
+	    <h2>My Goals</h2>
+	    <p class="goal-description">
+            앞으로 이루고 싶은 목표를 체크리스트로 관리해보세요.
+	    </p>
+
+	    <div class="goal-input-box">
+		    <input
+			    id="goalInput"
+			    type="text"
+			    placeholder="예: JavaScript로 자기소개 페이지 완성하기"
+		    >
+		    <button id="addGoalBtn">추가</button>
+	    </div>
+
+	    <p id="errorMessage"></p>
+	    <p id="goalCount">현재 목표 0개</p>
+	    <ul id="goalList"></ul>
+    </section>
+
+
+    <section class="intro-box">
+	    <h2>About Me</h2>
+
+	    <p id="introText">
+	        안녕하세요. 저는 웹 개발을 배우고 있습니다.
+	    </p>
+
+	    <button id="changeIntroBtn">소개 문구 바꾸기</button>
+        <button id="themeBtn">다크모드</button>
+    </section>
+
+    <div class="guestbook-section">
+        <h3>방명록</h3>
+  
+        <p id="server-msg">데이터를 불러오는 중입니다...</p>
+
+        <p id="my-msg">아직 작성된 새 방명록이 없습니다.</p>
+
+    <div class="write-area">
+        <input type="text" id="guest-name" placeholder="이름">
+        <input type="text" id="guest-msg" placeholder="응원 한마디 남겨주세요!">
+        <button id="submit-btn">등록</button>
+    </div>
+    </div>
+
+    <script src="./script.js"></script> //항상 아래에!!!
+</body>
+</html>
